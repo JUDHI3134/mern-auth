@@ -12,7 +12,7 @@ const Header = () => {
             <Link to="/"><li>Home</li></Link>
             <Link to="/about"><li>About</li></Link>
             <Link to="/sign-in">
-            {currentUser ? <img src={currentUser.profilePicture} alt='profile' className='h-7 w-7 rounded-full object-cover'></img> : <li>Sign In</li>}
+            {currentUser ? <Link to="/profile"><img src={currentUser.profilePicture} alt='profile' className='h-7 w-7 rounded-full object-cover'></img></Link> : <li>Sign In</li>}
             </Link>
             
         </ul>
